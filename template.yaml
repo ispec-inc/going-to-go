@@ -17,10 +17,12 @@ spec:
   owner: yamad07
   lifecycle: experimental
   templater: cookiecutter
+  path: '.'
   schema:
     required:
       - component_id
       - description
+      - organization_name
     properties:
       component_id:
         title: Name
@@ -30,3 +32,7 @@ spec:
         title: Description
         type: string
         description: Description of the component
+      organization_name:
+        title: Description
+        type: string
+        description: Organization name of the component

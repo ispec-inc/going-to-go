@@ -1,8 +1,8 @@
 {
-    "organization_name": "ispec-inc",
+    "component_id": "",
     "owner": "yamad07",
-    "repository_name": "going-to-sample",
-    "use_git": "y",
+    "organization_name": "ispec-inc",
+    "repository_name": "{{cookiecutter.component_id}}",
     "_copy_without_render": [
         ".github/**/**.yml"
     ]
