@@ -1,0 +1,9 @@
+{
+    "organization_name": "ispec-inc",
+    "owner": "yamad07",
+    "repository_name": "going-to-sample",
+    "use_git": "y",
+    "_copy_without_render": [
+        ".github/**/**.yaml"
+    ]
+}
