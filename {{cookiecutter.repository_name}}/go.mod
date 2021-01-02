@@ -1,10 +1,9 @@
-module github.com/ispec-inc/go-distributed-monolith
+module github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}
 
 go 1.13
 
 require (
 	fyne.io/fyne v1.3.3 // indirect
-	gioui.org v0.0.0-20201031091437-39b50261d082 // indirect
 	github.com/BurntSushi/xgb v0.0.0-20201008132610-5f9e7b3c49cd // indirect
 	github.com/aclements/go-gg v0.0.0-20170323211221-abd1f791f5ee // indirect
 	github.com/aclements/go-moremath v0.0.0-20190830160640-d16893ddf098 // indirect

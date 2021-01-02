@@ -34,37 +34,7 @@ def init_git():
         git = Popen(command, cwd=PROJECT_DIRECTORY)
         git.wait()
 
-
-def remove_firebase_files():
-    """
-    Removes files needed for docker if it isn't going to be used
-    """
-    for filename in [
-            "pkg/registry/firebase_repository.go",
-            "pkg/infra/dao/firebase_auth.go",
-            ]:
-        os.remove(os.path.join(
-            PROJECT_DIRECTORY, filename
-        ))
-    shutil.rmtree("pkg/firebase")
-
-def remove_base_registry():
-    """
-    Removes files needed for docker if it isn't going to be used
-    """
-    for filename in [
-            "pkg/registry/repository.go",
-            ]:
-        os.remove(os.path.join(
-            PROJECT_DIRECTORY, filename
-        ))
-
 if '{{ cookiecutter.use_git }}'.lower() == 'y':
     init_git()
 else:
     remove_file(".gitignore")
-
-if '{{ cookiecutter.use_firebase_auth }}'.lower() == 'y':
-    remove_base_registry()
-else:
-    remove_firebase_files()

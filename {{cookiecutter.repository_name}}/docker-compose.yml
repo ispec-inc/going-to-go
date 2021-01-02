@@ -35,8 +35,6 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: {{cookiecutter.repository_name}}
       MYSQL_USER: root
-    volumes:
-      - ./docker/dev/my.cnf:/etc/mysql/conf.d/my.cnf
 
   dockerize:
     image: jwilder/dockerize:0.6.1

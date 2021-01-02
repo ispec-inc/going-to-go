@@ -4,6 +4,6 @@
     "repository_name": "going-to-sample",
     "use_git": "y",
     "_copy_without_render": [
-        ".github/**/**.yaml"
+        ".github/**/**.yml"
     ]
 }
