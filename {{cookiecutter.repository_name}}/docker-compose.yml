@@ -14,7 +14,7 @@ services:
     working_dir: /app
 
   api:
-    container_name: {{cookiecutter.repository_name}}-api
+    container_name: {{cookiecutter.repository_name}}
     build:
       context: .
       dockerfile: docker/dev/Dockerfile
@@ -33,7 +33,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: {{cookiecutter.repository_name}}
+      MYSQL_DATABASE: {{cookiecutter.db_name}}
       MYSQL_USER: root
 
   dockerize:

@@ -1,7 +1,7 @@
 package registry
 
 import (
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 
 	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/infra/dao"
 	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/mysql"

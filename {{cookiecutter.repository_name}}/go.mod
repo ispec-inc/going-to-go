@@ -71,4 +71,6 @@ require (
 	google.golang.org/genproto v0.0.0-20201030142918-24207fddd1c3 // indirect
 	gopkg.in/go-playground/validator.v9 v9.31.0 // indirect
 	gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0 // indirect
+	gorm.io/driver/mysql v1.0.3
+	gorm.io/gorm v1.20.11
 )

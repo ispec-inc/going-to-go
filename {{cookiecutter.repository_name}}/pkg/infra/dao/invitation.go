@@ -3,7 +3,7 @@ package dao
 import (
 	"errors"
 
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 
 	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/apperror"
 	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/domain/model"

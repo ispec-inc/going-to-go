@@ -2,6 +2,7 @@
     "component_id": "",
     "owner": "yamad07",
     "organization_name": "ispec-inc",
+    "db_name": "sample",
     "repository_name": "{{cookiecutter.component_id}}",
     "_copy_without_render": [
         ".github/**/**.yml"
