@@ -5,15 +5,12 @@ metadata:
   title: Go Monolith API Base
   description: |
     Template Project for Go API Backend Server
-  annotations:
-    github.com/project-slug: ispec-inc/going-to-go
-    backstage.io/techdocs-ref: github:https://github.com/ispec-inc/going-to-go
   tags:
     - recommended
     - golang
     - template
 spec:
-  type: service
+  type: api
   owner: yamad07
   lifecycle: experimental
   templater: cookiecutter
@@ -33,6 +30,6 @@ spec:
         type: string
         description: Description of the component
       organization_name:
-        title: Description
+        title: Organization
         type: string
         description: Organization name of the component
