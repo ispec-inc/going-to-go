@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   test:
-    container_name: {{cookiecutter.component_id}}-test
+    container_name: example-test
     build:
       context: .
       dockerfile: docker/test/Dockerfile
@@ -14,7 +14,7 @@ services:
     working_dir: /app
 
   api:
-    container_name: {{cookiecutter.component_id}}
+    container_name: example
     build:
       context: .
       dockerfile: docker/dev/Dockerfile
@@ -29,11 +29,11 @@ services:
     working_dir: /app
 
   mysql:
-    container_name: {{cookiecutter.component_id}}-db
+    container_name: example-db
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: {{cookiecutter.db_name}}
+      MYSQL_DATABASE: sample
       MYSQL_USER: root
 
   dockerize:

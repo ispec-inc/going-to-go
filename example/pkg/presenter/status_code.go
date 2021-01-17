@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/apperror"
+	"github.com/ispec-inc/going-to-go/example/pkg/apperror"
 )
 
 var CodeStatuses = map[apperror.Code]int{

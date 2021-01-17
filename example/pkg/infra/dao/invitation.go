@@ -5,10 +5,10 @@ import (
 
 	"gorm.io/gorm"
 
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/apperror"
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/domain/model"
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/infra/entity"
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/transaction"
+	"github.com/ispec-inc/going-to-go/example/pkg/apperror"
+	"github.com/ispec-inc/going-to-go/example/pkg/domain/model"
+	"github.com/ispec-inc/going-to-go/example/pkg/infra/entity"
+	"github.com/ispec-inc/going-to-go/example/pkg/transaction"
 )
 
 type Invitation struct {

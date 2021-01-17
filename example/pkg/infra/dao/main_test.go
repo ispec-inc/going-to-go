@@ -7,8 +7,8 @@ import (
 	"gorm.io/gorm"
 	"github.com/tanimutomo/sqlfile"
 
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/config"
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/mysql"
+	"github.com/ispec-inc/going-to-go/example/pkg/config"
+	"github.com/ispec-inc/going-to-go/example/pkg/mysql"
 )
 
 var (

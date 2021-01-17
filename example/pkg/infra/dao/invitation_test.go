@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/infra/entity"
-	"github.com/{{cookiecutter.organization_name}}/{{cookiecutter.repository_name}}/pkg/domain/model"
+	"github.com/ispec-inc/going-to-go/example/pkg/infra/entity"
+	"github.com/ispec-inc/going-to-go/example/pkg/domain/model"
 )
 
 func TestInvitationDao_Find(t *testing.T) {
