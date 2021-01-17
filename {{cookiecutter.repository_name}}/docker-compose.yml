@@ -45,6 +45,6 @@ services:
   dbmate:
     image: amacneil/dbmate:v1.9.0
     env_file:
-      - .env.migrate
+      - .env.docker.migrate
     volumes:
       - ./db:/db
