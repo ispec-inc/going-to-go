@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: going-to-go
+  title: Template Project of Go API
+  annotations:
+    github.com/project-slug: ispec-inc/going-to-go
+    backstage.io/techdocs-ref: dir:./
+  description: |
+  tags:
+    - golang
+    - civilization
+spec:
+  type: library
+  owner: yamad07
+  lifecycle: experimental
