@@ -1,4 +1,5 @@
 site_name: 'Going To Go'
+site_discription: 'Template project of go api powered by cookiecutter'
 
 nav:
   - Overview: index.md
