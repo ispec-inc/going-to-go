@@ -1,0 +1,8 @@
+site_name: {{cookiecutter.repository_name}}
+site_discription: {{cookiecutter.repository_name}} written by Go
+
+nav:
+  - Overview: index.md
+
+plugins:
+  - techdocs-core

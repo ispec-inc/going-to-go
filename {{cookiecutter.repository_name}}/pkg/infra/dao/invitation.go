@@ -22,7 +22,7 @@ func NewInvitation(db *gorm.DB) Invitation {
 func (repo Invitation) Find(id int64) (model.Invitation, apperror.Error) {
 	var inv entity.Invitation
 	if err := repo.db.First(&inv, id).Error; err != nil {
-		return model.Invitation{}, NewGormError(
+		return model.Invitation{}, newGormError(
 			err, "error searching invitation in database",
 		)
 	}
@@ -32,7 +32,7 @@ func (repo Invitation) Find(id int64) (model.Invitation, apperror.Error) {
 func (repo Invitation) FindByUserID(uid int64) (model.Invitation, apperror.Error) {
 	var inv entity.Invitation
 	if err := repo.db.First(&inv, "user_id = ?", uid).Error; err != nil {
-		return model.Invitation{}, NewGormError(
+		return model.Invitation{}, newGormError(
 			err, "error searching invitation in database",
 		)
 	}
@@ -47,7 +47,7 @@ func (repo Invitation) Create(minv model.Invitation) apperror.Error {
 			Find(&invs, "user_id = ?", minv.UserID).
 			Error
 		if err != nil {
-			return NewGormError(err, "error searching invitation in database")
+			return newGormError(err, "error searching invitation in database")
 		}
 		if len(invs) > 0 {
 			return apperror.New(apperror.CodeInvalid, errors.New("error: invitation code is already exists"))
@@ -55,7 +55,7 @@ func (repo Invitation) Create(minv model.Invitation) apperror.Error {
 
 		inv := entity.NewInvitationFromModel(minv)
 		if err := tx.Create(&inv).Error; err != nil {
-			return NewGormError(err, "error inserting invitation in database")
+			return newGormError(err, "error inserting invitation in database")
 		}
 
 		return nil
